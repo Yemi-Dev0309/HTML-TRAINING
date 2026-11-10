@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: move;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move {
+            from{
+                background-color: brown;
+                transform: translate(600px);
+
+            }
+            to{
+                background: linear-gradient(pink, purple);
+                /* transform: rotateX(300'angle'); */
+
+            }
+        }
+
+        .details{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: move;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move {
+            from{
+                background-color: brown;
+                transform: translate(600px);
+
+            }
+            to{
+                background: linear-gradient(pink, purple);
+                /* transform: rotateX(300'angle'); */
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+
+    <details class="details">
+        <summary>goods</summary>
+        <div class="goods-dropp">
+            <a href="#">love</a>
+
+        </div>
+
+    </details>
+</body>
+</html>

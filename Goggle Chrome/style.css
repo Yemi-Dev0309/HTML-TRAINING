@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* CHROME TOP BAR */
+
+.chrome-top{
+    height: 50px;
+    background-color: #dbe6fb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+}
+
+/* LEFT section */
+
+.left-side {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.top-menu {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 12px;
+    background-color: #c9d7f0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.browser-tab{
+    width: 270px;
+    height: 40px;
+    background-color: white;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+}
+
+.chrome-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.browser-tab span {
+    font-size: 14px;
+
+    flex: 1;
+}
+
+.close-tab {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.new-tab {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* RIGHT SECTION */
+
+.right-tab {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.gemini-btn{
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-right: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.window-btn {
+    width: 48px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.window-btn:hover{
+    background-color: #c3d2eb;
+}
+
+.close-window:hover{
+    background-color: #e81123;
+    color: white;
+}
+
+
+/* NAVIGATION BAR  */
+
+.nav-bar {
+    height: 54px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.nav-left,
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-btn {
+      width: 38pxpx;
+      height: 38px;
+      border: none;
+      background: transparent;
+
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+}
+
+.nav-btn:hover{
+    background-color: #eeeeee;
+}
+
+/* ADDRESS BAR  */
+
+.address-bar{
+    flex: 1;
+    height: 40px;
+    background-color: #f1f3f4;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 10px;
+}
+
+.goggle-small{
+    font-weight: bold;
+    font-size: 16px;
+    color: #4285f4;
+
+}
+
+.address-bar input{
+    flex: 1;
+
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+}
+
+.address-icon{
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* PROFILE */
+
+.profile-small{
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-small img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,38 @@
+Bloom Cycle Tracker
+
+CONTENTS
+ready-to-upload/ - Finished website: upload this folder to a static host.
+source/ - Complete editable React + TypeScript + Vite project, including tests.
+
+DEPLOY WITH SURGE
+1. Extract this ZIP on your computer.
+2. Open a terminal inside ready-to-upload.
+3. If needed, install Surge: npm install --global surge
+4. Run: surge . bloom-cycle-tracker.surge.sh
+5. Sign in when asked. That address must be available; choose another if taken.
+
+DEPLOY WITH NETLIFY
+Drag the ready-to-upload folder into Netlify's manual deployment upload area.
+
+EDIT THE SOURCE
+Open source in VS Code. Install Node.js, then run:
+  npm install
+  npm run dev
+To make a new production build after edits:
+  npm run build
+Upload the contents of source/dist (not the raw source files).
+For Vercel or Netlify repository builds, use source as the project root,
+npm run build as the build command, and dist as the output folder.
+
+IMPORTANT
+This is a standalone frontend. No AppDeploy SDK, API keys, paid membership,
+backend, or database is required. Fonts load from Google Fonts when online;
+fallback fonts are used otherwise. This version does not include offline
+caching, push reminders, accounts, or device sync.
+
+Period history is stored only in the browser on the address being used.
+Moving hosts does not transfer logs from the old address. JSON export is
+available, but this version has no import feature. The ZIP includes no users'
+period records. Clearing browser storage can delete saved records.
+
+Predictions are estimates, not diagnosis or contraception.

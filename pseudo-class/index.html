@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: brown;
+        transition-delay: 1s;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+      }
+
+      .box:hover{
+        background-color: burlywood;
+      }
+
+      button{
+        width: 500px;
+        .up{
+            display: flex;  
+            justify-content: space-between;
+
+        }
+        #UP{
+            display: none;
+        }
+      }
+      button:focus #up{
+        display: block;
+      }
+      h1{
+        display: inline;
+      }
+      .shape{
+        min-width: 150px;
+        height: 150px;
+        background-color: brown;
+        border-radius: 5px;
+
+      }
+      .container{
+        display: flex;
+        width: 450px;
+        background-color: burlywood;
+        overflow: auto;
+      }
+   
+      .show{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      #box{
+        width: 220px;
+        height: 100px;
+        border: 2px ridge sienna;
+      }
+      .hold{
+        display: flex;
+        gap: 6px;
+        width: 100%;
+        background-color: coral;
+        flex-wrap: wrap;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <button>
+      <div class="up">
+        <p>What is Netflix?</p>
+        <p>Add</p>
+
+      </div>
+      <div id="up">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi corrupti quibusdam libero ullam ipsam velit, sint officiis in eum, fuga aperiam nulla sequi obcaecati quas omnis sit. Harum, nostrum ad.
+
+      </div>
+    </button>
+
+    <h1>Block level element</h1>
+    <h1>block level element</h1>
+    <div class="container">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="show">
+        <h1>The AI geng- use ai to learn more</h1>
+        <h2>Explore with AI</h2>
+        <p>Tell AI to explain to you like a kid</p>
+        <h6>you're welcome</h6>
+    </div>
+
+    <div class="hold">
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+        <div id="box"></div>
+    </div>
+</body>
+</html>

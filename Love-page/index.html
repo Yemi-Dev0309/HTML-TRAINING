@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A Little Surprise ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Decorative hearts appear inside this container -->
+  <div id="hearts" aria-hidden="true"></div>
+
+  <header class="page-header">
+    <p>MADE WITH LOVE BY YEMI</p>
+  </header>
+
+  <main>
+    <!-- First screen: the gift -->
+    <section id="giftScreen" class="gift-screen">
+      <p class="eyebrow">A little surprise for you AYEWANDE❤️</p>
+
+      <h1>Hey, Someone Specialh ❤️</h1>
+
+      <p>I made something just to make you smile.</p>
+
+      <button
+        id="giftButton"
+        class="gift-button"
+        aria-label="Open your gift"
+      >
+        🎁
+      </button>
+
+      <p id="countdown" aria-live="polite">
+        Tap the gift to open it
+      </p>
+    </section>
+
+    <!-- Second screen: initially hidden -->
+    <section id="loveScreen" class="love-screen" hidden>
+      <p class="eyebrow">Every picture tells a story</p>
+
+      <h2 id="galleryTitle" tabindex="-1">
+        You make ordinary moments special ❤️
+      </h2>
+
+      <p class="intro">A few pictures. A thousand feelings.</p>
+
+      <div class="carousel" aria-label="Photo gallery">
+        <div class="carousel-track">
+          <figure class="photo-card">
+            <img src="photo-1.jpg" alt="Our first special memory">
+            <figcaption>A smile worth keeping ❤️</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="photo-2.jpg" alt="Our second special memory">
+            <figcaption>My favourite kind of happiness 💕</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="photo-3.jpg" alt="Our third special memory">
+            <figcaption>Little moments, big feelings 🥹</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="photo-4.jpg" alt="Our fourth special memory">
+            <figcaption>You make life more colourful 🌸</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="photo-5.jpg" alt="Our fifth special memory">
+            <figcaption>This one is just for you 💌</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="gallery-controls">
+        <button id="previousButton" aria-label="Previous photo">
+          ←
+        </button>
+
+        <span id="photoCounter" aria-live="polite">1 / 5</span>
+
+        <button id="nextButton" aria-label="Next photo">
+          →
+        </button>
+      </div>
+
+      <div class="love-action">
+        <p>How many times can I say it?</p>
+
+        <button id="loveButton" class="main-button">
+          Show me 1,000 times ❤️
+        </button>
+
+        <p id="loveStatus" aria-live="polite"></p>
+
+        <div
+          id="loveMessages"
+          class="love-messages"
+          aria-label="One thousand love messages"
+          hidden
+        ></div>
+
+        <p id="finalMessage" class="final-message" hidden>
+          Even 1,000 times cannot contain everything I feel. ❤️
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Created by YEMI, with a little code and plenty of heart.</footer>
+</body>
+</html>

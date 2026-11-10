@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Log, edit and retain a period",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "period creation",
+      "period editing",
+      "symptom and note logging",
+      "local persistence",
+      "cycle estimates",
+      "history"
+    ],
+    "description": "A saved and edited log persists and drives the overview estimate.",
+    "steps": [
+      "Click Log period. Set start date to 2026-09-01 and end date to 2026-09-05, select Cramps and enter note First cycle. Save period.",
+      "Open History and edit that entry. Change flow to Light and note to Updated cycle. Save.",
+      "Refresh the page, open History and verify the updated entry. Open Overview."
+    ],
+    "expected": "The September 1\u20135 log retains Light flow, Cramps and Updated cycle. Overview shows estimated next period September 29, 2026 and cycle length 28 days."
+  },
+  {
+    "name": "Calendar and preferences on mobile",
+    "viewport": "mobile",
+    "covers": [
+      "mobile navigation",
+      "settings persistence",
+      "calendar navigation",
+      "estimated calendar dates",
+      "empty state"
+    ],
+    "description": "Cycle settings persist and a period produces the correct predicted calendar range.",
+    "steps": [
+      "Open Settings. Set cycle length to 30 and period length to 4. Save preferences.",
+      "Log a period with start 2026-09-01 and end 2026-09-04. Save.",
+      "Refresh and verify Settings retains 30 and 4. Open Calendar and use month arrows to reach October 2026, then September 2026."
+    ],
+    "expected": "Controls fit the mobile screen. September 1\u20134 are logged and October 1\u20134 are estimated. Preferences remain saved."
+  },
+  {
+    "name": "Reject invalid and overlapping dates",
+    "viewport": "desktop",
+    "covers": [
+      "future date validation",
+      "end date validation",
+      "overlap validation",
+      "cancel log"
+    ],
+    "description": "Invalid period data cannot create a log.",
+    "setup": [
+      "Create a period from 2026-09-10 to 2026-09-14."
+    ],
+    "steps": [
+      "Open Log period and enter a start date of 2099-01-01. Try to save.",
+      "Enter start 2026-09-15 and end 2026-09-12. Try to save.",
+      "Enter start 2026-09-12 and end 2026-09-13. Save.",
+      "Verify overlap error then Cancel. Open History."
+    ],
+    "expected": "Future dates and reversed dates are rejected. Overlapping dates show an error. Only the original September 10\u201314 entry exists."
+  },
+  {
+    "name": "Delete logs and export or erase data",
+    "viewport": "desktop",
+    "covers": [
+      "period deletion",
+      "delete cancellation",
+      "export",
+      "delete all data",
+      "reset persistence",
+      "privacy information"
+    ],
+    "description": "Deletion requires confirmation and erased records remain absent after reload.",
+    "setup": [
+      "Create a period with start 2026-08-01 and end 2026-08-04."
+    ],
+    "steps": [
+      "Open History and click delete on the August entry. Cancel and verify it remains.",
+      "Delete it again and Confirm delete. Refresh and verify it is absent.",
+      "Open Settings and click Export data. Verify a JSON file downloads.",
+      "Click Delete all data, Confirm delete and refresh. Open History and Overview."
+    ],
+    "expected": "Cancellation preserves the entry, confirmed deletion removes it, export downloads JSON, and clearing all data leaves an empty history with no estimated next period. Browser-only storage information is visible."
+  },
+  {
+    "name": "Comfort Corner controls",
+    "viewport": "mobile",
+    "covers": [
+      "sound playback and stop",
+      "volume",
+      "sound choice",
+      "breathing controls",
+      "mood check-in",
+      "reduced motion"
+    ],
+    "description": "Optional comfort controls work without autoplay.",
+    "steps": [
+      "On Overview scroll to Comfort Corner. Choose Rain, press Play sound, adjust volume, and stop. Choose Ocean, play and stop.",
+      "Start and stop the breathing guide. Select Worried and verify the supportive message.",
+      "Enable reduced motion and start the breathing guide."
+    ],
+    "expected": "Sound is user initiated and stoppable. Breathing cues appear and stop on request. The mood message appears without saving it. Reduced motion disables flower animation."
+  }
+]
